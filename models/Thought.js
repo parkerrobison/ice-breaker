@@ -44,7 +44,7 @@ const ThoughtSchema = new Schema(
             required: true
         },
         // reactions
-        reactions: [reactionSchema]
+        reactions: [ReactionSchema]
     }
 )
 
