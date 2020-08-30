@@ -39,7 +39,7 @@ const ThoughtSchema = new Schema(
             get: (createdAtVal) => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
         },
         username: {
-            type: Schema.Types.ObjectId,
+            type: String,
             ref: 'User',
             required: true
         },
@@ -59,4 +59,4 @@ ReactionSchema.virtual('reactionCount')
 const Thought = model('Thought', ThoughtSchema);
 const Reaction = model('Reaction', ReactionSchema);
 
-module.exports = { Thought, Reaction };
+module.exports = Thought;
