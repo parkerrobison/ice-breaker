@@ -50,6 +50,21 @@ const userController = {
             console.log(err)
             res.status(400).json(err)
         })
+    },
+
+    deleteUser( { params }, res) {
+        User.findOneAndDelete({ _id: params.id })
+        .then(dbUserdata => {
+            if (!dbUserdata) {
+                res.status(404).json({ message: 'No user was found with this id.'});
+                return;
+            }
+            res.json(dbUserdata)
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err)
+        })
     }
 }
 
