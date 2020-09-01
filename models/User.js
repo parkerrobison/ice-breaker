@@ -23,16 +23,12 @@ const UserSchema = new Schema({
     }]
 })
 
-//friendCount virtual
-UserSchema.virtual('friendCount')
-.get(function() {
-    return this.friendCount;
-})
-.set(function(value) {
-    this.friendCount= value;
-})
-
 //create the User model using UserSchema
 const User = model('User', UserSchema);
+
+//friendCount virtual
+UserSchema.virtual('friendCount').get(function() {
+    return this.friends.length;
+});
 
 module.exports= User;
