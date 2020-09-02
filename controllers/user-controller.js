@@ -15,7 +15,7 @@ const userController = {
 
     getUserById({ params }, res) {
         User.findOne({ _id: params.id })
-        // .populate({path: 'thoughts'})
+        .populate({path: 'thoughts'})
         .populate({path: 'friends'})
         .then(dbUserdata => {
             if (!dbUserdata) {
@@ -70,7 +70,6 @@ const userController = {
         })
     },
 
-    // this needs to be workshopped
     addFriend(req, res) {
         User.findOneAndUpdate(
             { _id: req.params.userId },
@@ -93,7 +92,7 @@ const userController = {
     removeFriend( { params }, res) {
         User.findOneAndUpdate( 
             { _id: params.userId },
-            { $pull: { friends: {friendId: params.friendId } } },
+            { $pull: { friends: params.friendId } },
             { new: true }
         )
             .then(dbUserdata => {
