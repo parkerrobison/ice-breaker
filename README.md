@@ -6,6 +6,8 @@
   
   ice-breaker is the back-end to a new social media website. ice-breaker is a website where you can post an ice-breaker question and other users can respond to that question with their answers. The project was created using MongoDB , express and the mongoose ODM. This project is solely the API for the ice-breaker social network. 
   
+  ## Tutorial
+  Part 1 https://drive.google.com/file/d/1aqAOeOh9aRBcbY0TfIhOZafhBIS-X2IB/view
   
   ## Table of Contents
   
