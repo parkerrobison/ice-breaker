@@ -8,6 +8,7 @@
   
   ## Tutorial
   Part 1 https://drive.google.com/file/d/1aqAOeOh9aRBcbY0TfIhOZafhBIS-X2IB/view
+  Part 2 https://drive.google.com/file/d/1Y0mhdu8kNMI7Iioa8iMKsgw6BzGLQGko/view
   
   ## Table of Contents
   
