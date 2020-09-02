@@ -8,6 +8,7 @@
   
   ## Tutorial
   Part 1 https://drive.google.com/file/d/1aqAOeOh9aRBcbY0TfIhOZafhBIS-X2IB/view
+  
   Part 2 https://drive.google.com/file/d/1Y0mhdu8kNMI7Iioa8iMKsgw6BzGLQGko/view
   
   ## Table of Contents
@@ -33,6 +34,6 @@
 
   ## Questions
   If you run into any errors or have further questions about this program, you can contact here: 
-  *github: https://github.com/parkerrobison 
-  *email: parkerobison@gmail.com.
+    *github: https://github.com/parkerrobison 
+    *email: parkerobison@gmail.com.
   Please reference the project in question in the message. Thank you.
